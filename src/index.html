@@ -642,24 +642,37 @@
                             position: "fixed",
                             right: "8px",
                             bottom: "8px",
-                            padding: "8px",
+                            padding: "4px",
                             borderRadius: "8px",
                             background: "white",
                             opacity: 0.7
                         }}>
-                            <span>{state.hitokoto}</span>
-                            <a href={"https://www.mcbbs.net/home.php?uid=4019661"}>
-                                <img
-                                    style={{
-                                        marginLeft: "8px",
-                                        borderRadius: "2em",
-                                        height: "4em",
-                                        width: "4em",
-                                        animation: "spin 60s linear infinite"
-                                    }}
-                                    src={"/avatar.jpg"}
-                                />
-                            </a>
+                            <div style={{padding: "4px"}}>
+                                <span>{state.hitokoto}</span>
+                                <a href={"https://www.mcbbs.net/home.php?uid=4019661"} target={"_blank"}>
+                                    <img
+                                        style={{
+                                            marginLeft: "8px",
+                                            borderRadius: "2em",
+                                            height: "4em",
+                                            width: "4em",
+                                            animation: "spin 60s linear infinite"
+                                        }}
+                                        src={"/avatar.jpg"}
+                                    />
+                                </a>
+                            </div>
+                            <div style={{
+                                margin: "4px",
+                                borderRadius: "6px",
+                                background: "#1890ff73",
+                                padding: "6px",
+                                color: "white"
+                            }}>
+                                CurseForge Modpack Maker v1.1.0<br />
+                                Made by 稲葉稔 | <a href={"https://www.mcbbs.net/thread-1183410-1-1.html"} target={"_blank"}>MCBBS 原帖</a> <br />
+                                Deployed by <a href={"https://maxelbk.ml/"} target={"_blank"}>Maxel Black</a> on <a href={"https://vercel.com/"} target={"_blank"}>Vercel</a>
+                            </div>
                         </div>
                     </Spin>
                 )
